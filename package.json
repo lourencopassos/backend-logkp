@@ -1,0 +1,49 @@
+{
+  "name": "backend-logkp",
+  "version": "1.0.0",
+  "description": "Realtime GPS tracking using Node.js, redis and websockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start:dev": "nodemon",
+    "start": "npm run build && node build/index.js",
+    "build": "rimraf ./build && node build/index.js",
+    "lint": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lourencopassos/backend-logkp.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Lourenco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lourencopassos/backend-logkp/issues"
+  },
+  "homepage": "https://github.com/lourencopassos/backend-logkp#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "redis": "^3.1.2",
+    "socket.io": "^4.1.2"
+  }
+}
